@@ -2,8 +2,8 @@
 	"_comment_AUTO_UPGRADE": "Every time the ESP32 resets, it upgrades his firmware with the Github code.",
 	"AUTO_UPGRADE": true,
 
-	"_comment_ONLY_RELEASES": "If it's true, it will only update the release code versions athoug it will update to last commit",
-	"ONLY_RELEASES": true,
+	"_comment_ONLY_RELEASES": "If it's true, it will only update the release code versions thought it will update to last commit",
+	"ONLY_RELEASES": false,
 
 	"_comment_COMMIT_BRANCH": "When ONLY_RELEASES == false, will update to the last commit of this branch",
 	"COMMIT_BRANCH": "master",
@@ -14,6 +14,4 @@
 
 	"last_commit": ""
  }
-
-
 
