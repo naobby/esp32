@@ -1,5 +1,5 @@
 import os
-from main.ota_updater import OTAUpdater
+from ota_updater import OTAUpdater
 
 wifi_ssid = "neobby"
 wifi_password = "spdhql20!$"
@@ -13,6 +13,9 @@ def start():
 
 if __name__ == '__main__':
   start()
+
+
+
 
 
 

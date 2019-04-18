@@ -179,10 +179,10 @@ class OTAUpdater:
       for file in file_list.json():
         if file['type'] == 'file':
           download_url = file['download_url']
-          download_path = self.modulepath(self.main_dir + '/' + file['path'].replace(self.main_dir + '/', ''))
+          download_path = self.modulepath(file['path'].replace(self.main_dir + '/', ''))
           self.download_file(download_url.replace('refs/tags/', ''), download_path)
         elif file['type'] == 'dir':
-          path = self.modulepath(self.main_dir + '/' + file['path'].replace(self.main_dir + '/', ''))
+          path = self.modulepath(file['path'].replace(self.main_dir + '/', ''))
           os.mkdir(path)
           self.download_all_files(root_url + '/' + file['name'], version)
 
@@ -331,6 +331,7 @@ class HttpClient:
 
    def delete(self, url, **kw):
      return self.request('DELETE', url, **kw)
+
 
 
 
